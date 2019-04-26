@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <tab
+            id="@+id/tab_hom"
+            icon="@mipmap/bottom_layers"
+            title="首页"/>
+    <tab
+            id="@+id/tab_mv"
+            icon="@mipmap/bottom_phone"
+            title="MV"/>
+    <tab
+            id="@+id/tab_vbang"
+            icon="@mipmap/bottom_contacts"
+            title="V榜"/>
+    <tab
+            id="@+id/tab_yuedan"
+            icon="@mipmap/bottom_phone"
+            title="悦单"/>
+</PreferenceScreen>
