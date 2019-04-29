@@ -9,7 +9,7 @@ import org.jetbrains.anko.AnkoLogger
 import org.jetbrains.anko.support.v4.runOnUiThread
 import org.jetbrains.anko.support.v4.toast
 
-abstract class BaseFragment : Fragment(),AnkoLogger {
+abstract class BaseFragment : Fragment(), AnkoLogger {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         init()
@@ -32,16 +32,16 @@ abstract class BaseFragment : Fragment(),AnkoLogger {
         initData()
     }
 
-    protected fun initData() {
+    open protected fun initData() {
 
     }
 
-    protected fun initListener() {
+    open protected fun initListener() {
 
 
     }
 
-    protected fun myToast(msg:String){
+    protected fun myToast(msg: String) {
         runOnUiThread { toast(msg) }
     }
 }
